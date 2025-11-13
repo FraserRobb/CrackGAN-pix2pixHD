@@ -1,5 +1,10 @@
 debug*
-checkpoints/
+
+# Ignore the contents of checkpoints (to avoid committing large model files)
+checkpoints/*
+# But retain the .gitkeep file to ensure the folder exists (as an exception)
+!checkpoints/.gitkeep
+
 results/
 build/
 dist/
